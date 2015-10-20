@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JBEB - Pulsatile Aortic Pressure-Flow Analysis using Fractional Calculus for Minimally-invasive Applications</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab:300,400,400italic,500,600,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="../css/style.css" />
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../images/icon.ico" rel="shortcut icon" type="image/x-icon">
+<!--Goole Analytics Most Visited Article Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-57684114-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Include Most Visited Articles JS Code -->
+ <script type="text/javascript" src="mostvisited.js"></script> 
+
+<!-- Include SHARE THIS js sources -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "8f49e037-5155-4595-abc0-d069deae6488", doNotHash: true, doNotCopy: false, hashAddressBar: false, onhover:false});</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div class="header">
+
+    <div class="container">
+
+      <div class="row">
+
+        <header id="header">
+          <div class="logo col-sm-4"><a href="http://avestia.com"><img src="/images/logo.png" alt="Journal" class="img" /></a></div>
+          <div class="threemenu col-sm-5">
+            <div class="row"><a class="link col-sm-4" href="http://avestia.com"><img src="/images/home.jpg" class="img"></a> <a class="link col-sm-4" href="http://avestia.com/journals/"><img src="/images/journals.jpg" class="img"></a> <a class="link col-sm-4" href="http://amss.avestia.com"><img src="/images/submit.jpg" class="img"></a></div>
+          </div>
+          <div class="searching col-sm-3">
+<div class="sharethis">Share this page:<br/>
+<span class='st_email'></span>
+<span class='st_facebook'></span>
+<span class='st_twitter'></span>
+<span class='st_googleplus'></span>
+<span class='st_linkedin'></span>
+</div>
+            
+         <div class="search_wrapper">
+         <form class="search" action="../results" method="get">
+              <fieldset>
+                <span class="text">
+                <input name="q" id="q" type="text" value="" placeholder="Search..." /><button class="search_top_button">GO</button>
+                </span>
+
+              </fieldset>
+            </form>
+            
+            </div>
+          </div>
+          <div class="col-lg-12">
+
+          <div class="avada-row">
+
+            <nav id="nav" class="nav-holder">
+
+              <div role="navigation" class="navbar navbar-default">
+
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                  
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<span class="navbar-brand" href="#">Menu</span>
+                  </div>
+
+                  <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+
+					<li><a href="/">Journal Home</a></li><span class="menu-line">|</span>
+                        <li><a href="../aims/">Aims and Scopes</a></li><span class="menu-line">|</span>
+                        <li><a href="../charges/">Article Processing Charges</a></li><span class="menu-line">|</span>
+                        <li><a href="../guidelines/">Author Guidelines</a></li><span class="menu-line">|</span>
+                        <li><a href="../board/">Editorial Board</a></li><br>
+                        <li><a href="../volumes/">Past Volumes</a></li><span class="menu-line">|</span>
+                        <li><a href="../current/">Current Volume</a></li><span class="menu-line">|</span>
+                        <li><a href="../propose/">Propose a Special Topic</a></li><span class="menu-line">|</span>
+                        <li><a href="../register/">Receive Updates</a></li><span class="menu-line">|</span>
+                        <li><a href="../contact/">Contact Us</a></li>
+
+
+
+                    </ul>
+
+                  </div>
+
+                  <!--/.nav-collapse -->
+
+                </div>
+
+                <!--/.container-fluid -->
+
+              </div>
+
+            </nav>
+
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+
+        </header>
+
+      </div>
+
+    </div>
+<div class="clearfix"></div>
+  </div>
+
+  <div class="slider">
+
+  <div class="container">
+
+  <div class="row"><div class="col-lg-12"><img class="img2" src="../images/header.png" alt="img"></div></div>
+
+  </div>
+
+  </div>
+
+<div class="container">
+  <div class="clearfix"></div>
+  <div class="row">
+
+  <div class="col-lg-12 text">
+  
+<div align=center>
+<div class="table">
+
+    <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border:none; width: 100%'>
+         <tr>
+                <td>Volume 1, Year 2014 - Pages 1-7</td>
+                <td align="right"><a href="PDF/001.pdf">View PDF (Full-text)</a></td>
+        </tr>
+         <tr>
+                <td>DOI: TBA</td>
+                <td align="right"><a href="#references">Linked References</a></td>
+        </tr>
+		<!--<tr>
+		<td colspan="2">ISSN: 2368-6677</td>
+		</tr>-->
+     </table>
+     
+</div>
+</div>
+
+<br>
+
+<p align="center" style="font-size:22pt;">Pulsatile Aortic Pressure-Flow Analysis using Fractional Calculus for Minimally-invasive Applications</p>
+
+<p align="center">
+
+    <strong>Glen Atlas<sup>1,2</sup>, Sunil Dhar<sup>3</sup>, John K-J. Li<sup>4,5</sup></strong>
+    
+        <br><sup>1</sup>Rutgers New Jersey Medical School, Dept. of Anesthesiology, Newark, New Jersey, USA, 07039
+	    <br>atlasgm@njms.rutgers.edu
+		
+		<br><sup>2</sup>Stevens Institute of Technology, Dept. of Chemistry, Chemical Biology, and Biomedical Engineering, Hoboken, New Jersey, USA, 07030
+		
+		<br><sup>3</sup>New Jersey Institute of Technology, Dept. of Mathematical Sciences, Newark, New Jersey, USA, 07102
+		
+		<br><sup>4</sup>Rutgers University, Department of Biomedical Engineering, Piscataway, New Jersey 08854, USA
+		
+		<br><sup>5</sup>College of Biomedical Engineering and Instrument Science, Zhejiang University, Hangzhou, China
+        
+</p>
+    
+
+<p align="justify"><i><strong>Abstract- </strong>
+Time-dependent
+pulsatile pressure and flow waveforms in the aorta carry with them considerable
+information regarding the underlying dynamic behavior of the cardiovascular
+system. The aortic pressure-flow relationship has traditionally been described
+using integer calculus. As such, periodicity and linear system assumptions are necessarily
+imposed to extract hemodynamic information. We introduce the use of fractional
+calculus (FC) to relate minimally-invasive measurements, of the velocity of
+aortic blood flow with an esophageal Doppler monitor, to the derived aortic
+pressure. The basis for this research is a Taylor series model of the velocity
+of aortic blood flow with subsequent term-by-term fractional integration as
+well as fractional differentiation. These results demonstrate that this FC
+approach could potentially generate the aortic pressure waveform throughout
+systole. Further studies of its first derivative, or the time rate of pressure
+change, <img src="001_files/image001.png">, may also allow its maximal value, <img src="001_files/image002.png"> to be computed for use as an index of left
+ventricle contractility when noninvasive ultrasound Doppler flow velocity is
+available in the clinical setting.</i></p>
+
+<p align="left"><i><strong>Keywords:</strong></i> Fractional calculus,
+Aortic blood flow, Esophageal Doppler monitor, Differintegral, Differintegration.</p>
+
+<p>&nbsp;</p>
+<p align="justify">  &copy; Copyright 2014 Authors - This is an Open Access article published under the <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">Creative Commons Attribution License terms</a>. Unrestricted use, distribution, and reproduction in any medium are permitted, provided the original work is properly cited.</p>
+
+<p align="justify"><i>Disclaimer:  Presented in part at the International Conference on Biomedical Engineering and Systems, Prague, Czech Republic, August 14-15, 2014 and on the <a href="http://m.njit.edu/CAMS/Technical_Reports/CAMS13_14/report1314-18.pdf
+">NJIT Center for Applied Mathematics and Statistics website</a></i></p>
+
+<p>
+    Date Received: 2014-08-21 <br />
+    
+    Date Accepted: 2014-12-12  <br />
+    
+    Date Published: 2014-12-15
+</p>
+
+<img src="../images/line.png" width="100%;" height="1" />
+<h2>1. Introduction</h2>
+
+
+<p align="justify" style="text-indent:19.85pt;">Hemodynamic diagnosis and clinical management
+often focus on blood pressure and flow measurements and subsequent analysis of
+their temporal relationship [1]. Routine catheterization can readily provide
+left ventricular pressure and aortic pressure, as well as cardiac output, from
+thermodilution. However, beat-to-beat flow measurements are less common. On the
+other hand, ultrasound Doppler echocardiography can provide images of cardiac
+and large vessel structures as well as blood flow velocity. Nonetheless, the
+aortic blood pressure waveform cannot be obtained. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Noninvasive or minimally-invasive approaches are
+preferred methods for routine clinical diagnosis and follow-up.
+Tonometer-based measurements, of blood pressure overlying the carotid artery,
+have been common [2], but are much less frequently used in conjunction with
+Doppler ultrasound in the clinical setting. It is possible to derive central
+aortic pressure when the Doppler ultrasound aortic flow velocity is known [3],
+[4]. These latter traditional hemodynamic models are typically based upon a
+linear second-order system utilizing the acceleration, velocity, and
+displacement of blood flow [5]. By convention, acceleration is defined as the
+first derivative of velocity, with respect to time, whereas displacement is its
+indefinite integral. In contradistinction, fractional calculus (FC) is based
+upon both integer and non-integer differentiation as well as integer and
+non-integer integration [6], [7].</p>
+
+
+
+<h2>2. Related Work</h2>
+
+<p align="justify" style="text-indent:19.85pt;">FC, although three centuries-old, has recently
+found applications in the analysis of biological systems. For instance,
+Djordjevic et al. [8] developed a rheological model of airway smooth muscle
+cells using a method incorporating FC and a least-squares data fitting
+technique. They showed that FC could be effectively utilized to account for a
+weak power law frequency dependence of cell rheological behavior. This effect
+could not be explained with traditional viscoelastic theory. Recently, an FC
+dynamic model has been applied to generate electrocardiogram (ECG) signals
+based upon oscillations and a global optimization scheme. This technique
+subsequently generates a realistic time series, of the ECG signal, and may find
+potential applications in modeling abnormal and irregular patterns of cardiac
+conduction [9].</p>
+
+<p align="justify" style="text-indent:19.85pt;">We have considerable experience with the use of
+esophageal Doppler monitor (EDM) for minimally-invasive measurement of the
+aortic flow velocity waveform [5]. This paper provides the first such
+application of FC to minimally-invasive hemodynamic studies and demonstrates
+how FC-based modelling could be effectively utilized in understanding the
+aortic pressure-flow relationship during systole. </p>
+
+
+
+<h2>3. Methods</h2>
+
+<h4>3.1. Fractional Calculus</h4>
+
+<p align="justify" style="text-indent:19.85pt;">To cognize this application of FC, traditional
+integer differentiation is first examined for a power function of time: </p>
+
+<div class="eqn">
+<img src="001_files/image003.png" class="img">.
+</div>
+<div class="eqn-number">(1)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image004.png" class="img">.
+</div>
+<div class="eqn-number">(2)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image005.png" class="img">.
+</div>
+<div class="eqn-number">(3)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image006.png" class="img">.
+</div>
+<div class="eqn-number">(4)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image007.png" class="img">.
+</div>
+<div class="eqn-number">(5)</div>
+<br><br>
+
+
+<p align="justify" style="text-indent:19.85pt;">In a likewise manner, the <i>n</i><sup>th</sup>
+repetitive integer integration process can also be examined for a power
+function of time:</p>
+
+
+<div class="eqn">
+<img src="001_files/image003.png" class="img">.
+</div>
+<div class="eqn-number">(6)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image008.png" class="img">.
+</div>
+<div class="eqn-number">(7)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image009.png" class="img">.
+</div>
+<div class="eqn-number">(8)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image010.png" class="img">.
+</div>
+<div class="eqn-number">(9)</div>
+<br><br>
+
+<div class="eqn">
+<img src="001_files/image011.png" class="img">.
+</div>
+<div class="eqn-number">(10)</div>
+<br><br>
+
+
+<p align="justify" style="text-indent:19.85pt;"><i>Note that a constant of integration can be
+utilized <u>after</u> the completion of the repetitive integration process.</i>Thus, using
+either (5) or (10), repetitive differentiation or repetitive integration can be
+similarly accomplished using either positive or negative values for <i>n</i>
+respectively. </p>
+
+<p align="justify" style="text-indent:19.85pt;">The gamma function <img src="001_files/image012.png">can be defined as [10]: </p>
+
+<div class="eqn">
+<img src="001_files/image013.png" class="img">.
+</div>
+<div class="eqn-number">(11)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Note that the gamma function is not defined for
+values of <i>x</i> equal to either zero or negative integer values.
+Furthermore, when <i>x</i> is a positive integer, the gamma function has the
+following property:</p>
+
+<div class="eqn">
+<img src="001_files/image015.png" class="img">.
+</div>
+<div class="eqn-number">(12)</div>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Additionally, <img src="001_files/image012.png">"smoothly connects" the integer values of the
+factorial function. <i>It is therefore suitable for defining non-integer
+factorial values.</i> The gamma function is illustrated in Figure 1.</p>
+
+<figure>
+<img src="001_files/image016.png" class="img"/>
+
+<figcaption>
+Figure 1. The gamma function is useful in determining non-integer values of the
+factorial function. It is not defined for zero and negative integer values</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Equations (5) and (10) can
+then be modified to utilize the gamma function: </p>
+
+<div class="eqn">
+<img src="001_files/image017.png" class="img">.
+</div>
+<div class="eqn-number">(13)</div>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Equation (13) can be used
+as the definition of the differintegral [11]. Where <i>q</i> can have a
+positive value; either integer or non-integer.<sup><a href="#footnote">1,2</a></sup>
+Note that <i>q</i> can also take on integer or non-integer negative values:<sup><a href="#footnote">3</a>sup></p>
+
+<div class="eqn">
+<img src="001_files/image018.png" class="img">
+</div>
+<div class="eqn-number">(14)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">The term <i>q </i>is referred to as the <i>order
+of differintegration </i>[12]. Additionally, <img src="001_files/image019.png">. As previously stated, G(0) is not defined. The
+gamma function is also not defined for negative integer values. Thus, specific
+fractional derivatives, or fractional integrals, may be unattainable. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Owing to either the positive or negative value of <i>q</i>
+in (13), the differintegral can therefore be utilized for the fractional
+differentiation, or fractional integration, of power functions. Furthermore,
+using FC, differentiation and integration may possibly be represented as a
+continuous process rather than discrete processes. </p>
+
+
+<h4>3.2. Fractional Calculus and the Taylor Series
+of an Exponential Function</h4>
+
+<p align="justify" style="text-indent:19.85pt;">The Taylor series for an exponential function is: </p>
+
+<div class="eqn">
+<img src="001_files/image021.png" class="img">.
+</div>
+<div class="eqn-number">(15)</div>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Thus, for a sufficiently
+large <i>N</i>, an exponential function can be accurately approximated as a
+summation of power functions. Using the above methodology, the Taylor series
+for an exponential can therefore be term-by-term fractionally differentiated or
+fractionally integrated:<br>
+<br>
+</p>
+
+<div class="eqn">
+<img src="001_files/image022.png" class="img">.
+</div>
+<div class="eqn-number">(16)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">For mathematical purposes, <i>t</i> cannot
+equal zero and be raised to a negative power. However, <i>t</i> can take on
+positive near-zero values. Negative values of <i>t</i> can also yield complex
+results. To further reiterate, care must be used when selecting integer values
+of <i>q</i> to prevent undefined values of the gamma function from occurring</p>
+
+<h2>4. Examining the Velocity of Aortic Blood Flow</h2>
+
+<p align="justify" style="text-indent:19.85pt;">The esophageal Doppler monitor (EDM) is frequently
+utilized to assess the velocity of aortic blood flow during systole. The EDM
+allows clinicians to accurately assess patients' cardiac output and stroke
+volume during anesthesia and critical care conditions [13]. Figure 2
+illustrates this waveform.</p>
+
+<p align="justify" style="text-indent:19.85pt;">This velocity, <i>v</i>(<i>t</i>), can be modelled
+as [5]:</p>
+
+
+<div class="eqn">
+<img src="001_files/image023.png" class="img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="001_files/image024.png" class="img">.
+</div>
+<div class="eqn-number">(17)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Where <i>a</i> represents an
+acceleration term and <i>b</i> is a dimensionless gain. The time spent in
+systole is referred to as flow time, <i>FT</i>. It should be noted that <i>g</i> can be
+determined [5]:</p>
+
+
+
+<div class="eqn">
+<img src="001_files/image025.png" class="img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="001_files/image026.png" class="img">.
+</div>
+<div class="eqn-number">(18)</div>
+<br><br>
+
+<figure>
+<img src="001_files/image027.png" class="img"/>
+
+<figcaption>
+Figure  2. The velocity of aortic blood flow as
+measured by an EDM. Note that <i>PV</i> represents peak velocity whereas <i>FT</i>
+signifies the time spent in systole. The time at which <i>PV</i> occurs is
+referred to as <i>FTp </i>[5]</figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Note that <i>FTp</i>
+represents the time at which peak velocity (PV) occurs. This is illustrated in
+Figure 2. Using a Taylor series, <i>v</i>(<i>t</i>) can subsequently be
+approximated as a time-based power function:</p>
+
+<div class="eqn">
+<img src="001_files/image028.png" class="img">
+</div>
+<div class="eqn-number">(19)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">By means of the aforementioned technique,
+fractional derivatives and fractional integrals of <i>v</i>(<i>t</i>) can then
+be determined:</p>
+
+
+<div class="eqn">
+<img src="001_files/image029.png" class="img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="001_files/image024.png" class="img">.
+</div>
+<div class="eqn-number">(20)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Figure 3 demonstrates the <i>continuous</i>
+differintegral (20) over the range: <img src="001_files/image030.png">.</p>
+
+
+<figure>
+<img src="001_files/image031.png" class="img"/>
+
+<figcaption>
+Figure 3. Equation (20), the velocity of aortic blood flow during systole, <i>v</i>(<i>t</i>),
+represented as a continuous differintegral. Note that fractional integration is
+associated with &#8722;1 &lt; <i>q</i> &lt; 0 whereas fractional
+differentiation is associated with 0 &lt; <i>q </i>&lt; 1. Furthermore, <img src="001_files/image032.png"></p>
+</figcaption>
+</figure>
+<br>
+
+
+<h2>5. Numerical Assessment</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Using MATHCAD (PTC Corp.,
+Needham, MA, USA) <i>v</i>(<i>t</i>) can be calculated utilizing the numerical
+values from Table 1. Subsequently, its differintegrals of order &#8722;0.7 and 0.1 can
+both be determined. These functions are illustrated in Figure 4. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Note that the dimension
+associated with <i>v</i>(<i>t</i>) is m/s whereas that of<img src="001_files/image033.png"> is m/s<sup>(&#8722;0.7)</sup>.<sup><a href="#footnote">4</a></sup>
+Furthermore, the dimension of <img src="001_files/image034.png">is m/s<sup>0.1</sup>. </p>
+
+
+<div class="widetable">
+<table>
+<caption>Table 1. Numerical values used for initial
+computational purposes</caption>
+<thead>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><b>Term</b></td>
+  <td style="padding:5px; border:1px black solid"><b>Value</b></td>
+  <td style="padding:5px; border:1px black solid"><b>Units</b></td>
+  <td style="padding:5px; border:1px black solid"><b>Notes</b></td>
+ </tr>
+</thead>
+<tbody>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>&alpha;</i></td>
+  <td style="padding:5px; border:1px black solid">7.25</td>
+  <td style="padding:5px; border:1px black solid">m/s<sup>2</sup></td>
+  <td style="padding:5px; border:1px black solid">acceleration</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>&beta;</i></td>
+  <td style="padding:5px; border:1px black solid">3.00</td>
+  <td style="padding:5px; border:1px black solid">dimensionless</td>
+  <td style="padding:5px; border:1px black solid">gain</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>&gamma;</i></td>
+  <td style="padding:5px; border:1px black solid">6.154</td>
+  <td style="padding:5px; border:1px black solid">s<sup>-1</sup></td>
+  <td style="padding:5px; border:1px black solid">exponential decay</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>FT</i></td>
+  <td style="padding:5px; border:1px black solid">0.36</td>
+  <td style="padding:5px; border:1px black solid">s</td>
+  <td style="padding:5px; border:1px black solid">flow time</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>FTp</i></td>
+  <td style="padding:5px; border:1px black solid">0.1</td>
+  <td style="padding:5px; border:1px black solid">s</td>
+  <td style="padding:5px; border:1px black solid">time to peak flow</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>a</i></td>
+  <td style="padding:5px; border:1px black solid">-0.7</td>
+  <td style="padding:5px; border:1px black solid">dimensionless</td>
+  <td style="padding:5px; border:1px black solid">order of fractional differintegration</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px; border:1px black solid"><i>b</i></td>
+  <td style="padding:5px; border:1px black solid">0.1</td>
+  <td style="padding:5px; border:1px black solid">dimensionless</td>
+  <td style="padding:5px; border:1px black solid">order of fractional differintegration</td>
+ </tr>
+</tbody>
+</table>
+</div>
+<br>
+
+
+<h2>6. The Systolic Pressure-Flow Relationship
+in the Aorta</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Using (20), a
+straightforward model of aortic blood pressure,<i> P</i>(<i>t</i>), as a
+function of the velocity of aortic blood flow during systole is:</p>
+
+
+<div class="eqn">
+<img src="001_files/image035.png" class="img">.
+</div>
+<div class="eqn-number">(21)</div>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Where <i>r</i> represents
+the radius of the aorta, and <i>a</i> and <i>b</i> are both velocity-based
+differintegrals of order &#8722;0.7 and 0.1 respectively. The term <i>Z<sub>a</sub></i>
+is "reactance-like" and would be analogous to a combination of elastance and
+resistance. Whereas <i>Z<sub>b</sub></i> would be analogous to a combination
+of inertia and resistance. Furthermore, <i>C</i> is a constant of integration
+and <i>k</i> converts units of Pascals to mmHg. In addition:</p>
+
+
+<div class="eqn">
+<img src="001_files/image036.png" class="img">.
+</div>
+<div class="eqn-number">(22)</div>
+<br><br>
+
+
+<figure>
+<img src="001_files/image037.png" class="img"/>
+
+<figcaption>
+Figure 4.<b> </b>Velocity as a function of time, <i>v</i>(<i>t</i>), and both its
+associated differintegrals of order &#8722;0.7 and 0.1 are
+displayed</figcaption>
+</figure>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">So that <i>C</i> also
+functions as an initial condition. Moreover, for the purposes of this
+preliminary assessment, a "trial and error" technique was employed to determine
+numerical values for <i>a</i>, <i>b</i> and <i>Z<sub>a</sub></i> and <i>Z<sub>b</sub></i>.
+These are displayed in Table 2. Note that <i>Z<sub>a</sub></i> and <i>Z<sub>b</sub></i><sub>
+</sub>have magnitudes which are "ballpark approximate" to those of
+traditionally-derived resistance, elastance, and inertia.</p>
+
+<p align="justify" style="text-indent:19.85pt;">The above model can also
+be utilized to assess <img src="001_files/image038.png">during systole:</p>
+
+<div class="eqn">
+<img src="001_files/image039.png" class="img">.
+</div>
+<div class="eqn-number">(23)</div>
+<br>
+
+<p align="justify" style="text-indent:19.85pt;">Both <i>P</i>(<i>t</i>)
+and <img src="001_files/image038.png"> are illustrated in Figure 5. Note that a positive
+near-zero initial value for <i>t</i>, instead of zero, has to be used in (23)
+to prevent a "division by zero" singularity error from occurring.</p>
+
+
+<div class="widetable">
+<table>
+<caption>Table 2. Numerical values used for final
+computational purposes</caption>
+<thead>
+ <tr align="center">
+  <td style="padding:5px;border:1px solid black"><b>Term</b></td>
+  <td style="padding:5px;border:1px solid black"><b>Value</b></td>
+  <td style="padding:5px;border:1px solid black"><b>Units</b></td>
+  <td style="padding:5px;border:1px solid black"><b>Notes</b></td>
+ </tr>
+</thead>
+<tbody>
+ <tr align="center">
+  <td style="padding:5px;border:1px solid black"><i>C</i></td>
+  <td style="padding:5px;border:1px solid black">80</td>
+  <td style="padding:5px;border:1px solid black">mmHg</td>
+  <td style="padding:5px;border:1px solid black">constant of integration</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px;border:1px solid black"><i>k</i></td>
+  <td style="padding:5px;border:1px solid black">0.0075</td>
+  <td style="padding:5px;border:1px solid black">mmHg/Pascal</td>
+  <td style="padding:5px;border:1px solid black">unit conversion</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px;border:1px solid black"><i>r</i></td>
+  <td style="padding:5px;border:1px solid black">0.011</td>
+  <td style="padding:5px;border:1px solid black">m</td>
+  <td style="padding:5px;border:1px solid black">aortic radius</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px;border:1px solid black"><i>Z<sub>a</sub></i></td>
+  <td style="padding:5px;border:1px solid black">3.157&#8226;10<sup>7</sup></td>
+  <td style="padding:5px;border:1px solid black">N&#8226;s<sup>a</sup>/m<sup>5</sup></td>
+  <td style="padding:5px;border:1px solid black">"reactance-like" term</td>
+ </tr>
+ <tr align="center">
+  <td style="padding:5px;border:1px solid black"><i>Z<sub>b</sub></i></td>
+  <td style="padding:5px;border:1px solid black">7.015&#8226;10<sup>6</sup></td>
+  <td style="padding:5px;border:1px solid black">N&#8226;s<sup>b</sup>/m<sup>5</sup></td>
+  <td style="padding:5px;border:1px solid black">"reactance-like" term</td>
+ </tr>
+</tbody>
+</table>
+</div>
+<br>
+
+
+<figure>
+<img src="001_files/image040.png" class="img"/>
+
+<figcaption>
+Figure 5. Using fractional calculus, <i>P</i>(<i>t</i>) is modelled using
+differintegrals which are based upon the velocity of aortic blood flow during
+systole. Note that <img src="001_files/image001.png"> is also displayed</figcaption>
+</figure>
+<br>
+
+
+<p align="justify" style="text-indent:19.85pt;">Straightforward linear
+algebraic techniques could also be applied. This would allow "real-time" or beat-to-beat
+assessment of the "reactance-like" terms, <i>Z<sub>a</sub></i> and <i>Z<sub>b</sub></i>.
+The following matrix relationship is derived using (21):</p>
+
+<div class="eqn">
+<img src="001_files/image041.png" class="img">.
+</div>
+<div class="eqn-number">(24)</div>
+<br>
+
+
+<p align="justify">Thus:</p>
+
+
+<div class="eqn">
+<img src="001_files/image042.png" class="img">.
+</div>
+<div class="eqn-number">(25)</div>
+<br>
+
+<h2>6. Discussion and
+Conclusion</h2>
+
+<p align="justify" style="text-indent:19.85pt;">Noninvasive
+assessment, of the hemodynamics within large arteries such as the aorta, has
+been limited, although invasive means have been commonplace in the clinical
+setting through catheterization [1], [14]. Advanced imaging modalities can
+provide geometric and detailed structural changes, but the dynamic properties
+of the pressure-flow relationship is typically not obtainable. Esophageal
+Doppler ultrasound measurements, of aortic blood flow velocity, have been
+demonstrated as a useful minimally-invasive clinical tool [15]. However,
+central aortic pressure cannot be obtained noninvasively. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Applanation tonometry,
+applied to peripheral arteries such as the carotid and radial, has been
+reported for noninvasive monitoring of both pulsatile pressure waveforms and
+arterial compliance [16]. Subsequently, these recorded peripheral waveforms
+have also been used to derive central aortic pressure waveforms via a transfer
+function. Clinically, these have been applied to obtain the augmentation index [17]
+and to assess vascular stiffness. But the temporal aspects, of the aortic
+pressure-flow relationship through minimally-invasive means, has yet to be
+demonstrated.</p>
+
+<p align="justify" style="text-indent:19.85pt;">We have introduced a
+technique, based on FC, for potentially deriving the temporal relationship of
+aortic pressure and flow throughout systole. The minimally-invasive measurement
+of the velocity of aortic blood flow is accomplished with an EDM; although this
+can also be obtained with a transthoracic Doppler echocardiographic monitor;
+which is commonly utilized in many clinics. </p>
+
+<p align="justify" style="text-indent:19.85pt;">Our approach is novel in
+that the Taylor series expansion of an exponential function was applied to
+allow term-by-term fractional differentiation and fractional integration. A
+closely related work using FC was performed by Craiem and Armentaro [18] who
+examined the power-law stress-strain relationship within sheep aorta; through
+simultaneous measurements of pulsatile aortic pressure and diameter. They were
+able to account for a dynamic frequency-dependent elastic modulus [19].</p>
+
+<p align="justify" style="text-indent:19.85pt;">The rate of rise of aortic
+pressure <img src="001_files/image038.png"> and flow velocity <img src="001_files/image043.png"> both have a close relationship with myocardial
+performance; particularly their peak values, <img src="001_files/image044.png"> and <img src="001_files/image045.png"> [20]. Thus, the minimally-invasive assessment of
+left ventricle contractility is potentially possible using an FC model. </p>
+
+
+<img src="../images/line.png" width="100&#37;" height="1" />
+<H2><a name="references">References</a></H2>
+
+
+<p>[1] J. K-J. Li,
+<i>The Arterial Circulation: Physical Principles and Clinical Applications</i>,
+Totowa, NJ, USA: Humana Press, 2000. <a href="http://books.google.ca/books/about/The_Arterial_Circulation.html?id=h0OBmc9uXbcC" target="_blank">View Book</a></p>
+
+<p>[2] J. K-J. Li,
+<i>Dynamics of the Vascular System</i>, Singapore: World Scientific Publishing,
+2004. <a href="https://books.google.ca/books?id=9UemS9koM_sC&dq=Dynamics+of+the+Vascular+System&hl=en&sa=X&ei=IEiPVNfnN9P2yQSmkoCoDA&ved=0CCwQ6AEwAA" target="_blank">View Book</a></p>
+
+<p>[3] C. Bowman,
+W-M. Shi, and J. K-J. Li, "A new noninvasive method to obtain blood pressure
+waveforms," <i>Proceedings of the 11<sup>th</sup> Annual Northeast
+Bioengineering Conference,</i> 1985. </p>
+
+<p>[4] M. K.
+Tangella, C. Bowman, J. K-J. Li, "Noninvasive analog measurements of
+ventricular ejection pressure," <i>Proceedings of the 14<sup>th</sup> Annual
+Northeast Bioengineering Conference</i>, pp. 163-165, 1988. <a href="http://dx.doi.org/10.1109/NEBC.1988.19374" target="_blank">View Article</a></p>
+
+<p>[5] G. Atlas, "Development
+and application of a logistic-based systolic model for hemodynamic measurements
+using the esophageal Doppler monitor," <i>Cardiovascular Engineering</i>, vol. 8,
+no. 3, pp. 159-173, 2008. <a href="http://dx.doi.org/10.1007/s10558-008-9057-9" target="_blank">View Article</a></p>
+
+<p>[6] M. Dalir,
+M. Bashour, "Applications of fractional calculus,"&nbsp;<i>Applied Mathematical
+Sciences</i>, vol.&nbsp;4, no. 21, pp. 1021-1032, 2010. <a href="http://www.m-hikari.com/ams/ams-2010/ams-21-24-2010/bashourAMS21-24-2010.pdf?origin=publication_detail" target="_blank">View Article</a></p>
+
+<p>[7] S. A.
+David, J. L. Linares, E. M. J. A. Pallone, "Fractional order calculus:
+historical apologia, basic concepts and some applications,"&nbsp;<i>Revista Brasileira de Ensino de F&iacute;sica</i>,&nbsp;vol.
+33, no. 4, pp. 4302-1&#8722;4302-7, 2011. <a href="http://dx.doi.org/10.1590/S1806-11172011000400002 " target="_blank">View Article</a></p>
+
+<p>[8] D. J.
+Djordjevic, J. Jaric, B. Fabry, J. J. Fredberg, D. Stamenovic, "Fractional
+derivatives embody essential features of cell rheological behavior," <i>Annals
+of Biomedical Engineering</i>, vol. 31, pp. 692-699, 2003. <a href="http://dx.doi.org/10.1114/1.1574026" target="_blank">View Article</a></p>
+
+<p>[9] S. Das, K.
+Moharatna, "Fractional dynamical model for the generation of ECG like signals
+from filtered coupled Van-der Pol oscillators," <i>Computer Methods and
+Programs in Biomedicine</i>, vol. 112, pp. 490-507, 2013. <a href="http://dx.doi.org/10.1016/j.cmpb.2013.08.012" target="_blank">View Article</a></p>
+
+<p>[10] J. Bonnar,
+<i>The Gamma Function,</i> Applied Research Press, 2013. <a href="https://books.google.ca/books?id=Ex9qoAEACAAJ&dq=The+Gamma+Function&hl=en&sa=X&ei=w0mPVOTeG5H-sAS8p4KIBg&redir_esc=y" target="_blank">View Book</a></p>
+
+<p>[11] S. Das, <i>Functional
+Fractional Calculus,</i> Heidelberg, Germany: Springer-Verlag, 2011. <a href="https://books.google.ca/books?id=_7PoPWe7hUQC&printsec=frontcover&dq=Functional+Fractional+Calculus&hl=en&sa=X&ei=10mPVKLPCsiBygSG9IHoAg&ved=0CB4Q6AEwAA#v=onepage&q&f=false" target="_blank">View Book</a></p>
+
+<p>[12] L. M. B.
+C. Campos, "On a generalized Mittag-Leffler theorem and implicit
+differintegration,"&nbsp;<i> Society for Industrial and Applied Mathematics
+(SIAM)</i>:<i> Journal on Mathematical Analysis</i>,&nbsp;vol. 20, no. 2, pp.
+454-467, 1989. <a href="http://dx.doi.org/10.1137/0520031" target="_blank">View Article</a></p>
+
+<p>[13] G. Atlas,
+D. Brealey, S. Dhar, G. Dikta, M. Singer, "Additional hemodynamic measurements
+with an esophageal Doppler monitor: a preliminary report of compliance, force,
+kinetic energy, and afterload in the clinical setting,"&nbsp;<i>Journal of
+Clinical Monitoring and Computing</i>,&nbsp;vol. 26, no. 6, pp. 473-482, 2012. <a href="http://dx.doi.org/10.1007/s10877-012-9386-5" target="_blank">View Article</a></p>
+
+<p>[14] J. K-J.
+Li, A. G. W. Van Brummelen, A. Noordergraaf, "Fluid-filled blood-pressure
+measurement systems,&quot; <i>Journal of Applied Physiology</i>, vol. 40, pp.
+839- 843, 1976. <a href="http://jap.physiology.org/content/40/5/839" target="_blank">View Article</a></p>
+
+<p>[15] G. Atlas,
+J. K-J. Li, and J. B. Kostis, "A comparison of mathematical models of left
+ventricular contractility derived from aortic blood flow velocity and
+acceleration: application to the esophageal Doppler monitor," <i>Biomedical
+Engineering Letters</i>, vol. 4, pp. 301-315, 2014. <a href="http://dx.doi.org/10.1007/s13534-014-0147-x" target="_blank">View Article</a></p>
+
+<p>[16] G.
+Drzewiecki, V. Bansal, J. K-J. Li, "Noninvasive measurement of single artery
+pressure and compliance using tonometry," <i>Conference Proceedings Association
+for the Advancement of Medical Instrumentation</i>, vol. 30, 1996. </p>
+
+<p>[17] J. E.
+Sharman, J. E. Davies, C. Jenkins, T. H. Marwick, "Augmentation index, left
+ventricular contractility, and wave reflection," <i>Hypertension</i>, vol. 54
+pp. 1099-1105, 2009. <a href="http://dx.doi.org/10.1161/HYPERTENSIONAHA.109.133066" target="_blank">View Article</a></p>
+
+<p>[18] D.O.
+Craiem, R. L. Armentano, "Arterial viscoelasticity: a fractional derivative
+model," <i>Conference Proceedings IEEE Engineering in Medicine and Biology
+Society</i>, vol. 1, pp. 1098-1101, 2006. <a href="http://dx.doi.org/10.1109/IEMBS.2006.259709" target="_blank">View Article</a></p>
+
+<p>[19] J. K-J.
+Li, J. Melbin, A. Riffle, A. Noordergraaf, "Pulse Wave Propagation," <i>Circulation
+Research</i>, vol. 49, pp. 442-452, 1981. <a href="http://dx.doi.org/10.1161/01.RES.49.2.442" target="_blank">View Article</a></p>
+
+<p>[20] J. K-J.
+Li, H. Yamazaki, M. M. Bodenheimer, V. S. Banka, R. H. Helfant, "Myocardial performance
+assessed by peak derivatives of peripheral pressure and flow pulses," <i>Federation
+Proceedings</i>, vol. 38, pp. 1449, 1979.</p>
+
+
+<img src="../images/line.png" width="100&#37;" height="1" />
+<H2><a name="footnote">Footnotes</a></H2>
+
+<sup>1</sup> However, <i>q</i>
+cannot take on integer values equal to such quantities as: (<i>m</i> + 1) or (<i>m</i>
++ 2) or (<i>m</i> + 3), etc. </p>
+
+<sup>2</sup> Imaginary and complex values of <i>q</i>
+can also be utilized. However, these will not be addressed in this introductory
+paper. </p>
+
+<sup>3</sup> Note that an alternative
+terminology could be that of <i>fractional <u>derivatives</u></i> and <i>fractional
+<u>antiderivatives</u></i>. </p>
+
+
+
+
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+<div class="clearfix"></div>
+  </div>
+
+  </div>
+
+  <div class="footer">
+
+  <div class="container">
+
+  <div class="col-sm-7 footer-link">
+
+        <p><a href="/">Avestia Publishing</a></p>
+        <p><a href="../register/">Subscribe to our Mailing List</a></p>
+        <p><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://avestia.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></p>
+        <p><a href="../terms/">Terms of Use</a></p>
+		<p><a href="../sitemap/">Sitemap</a></p>
+
+      </div>
+      <div class="col-sm-5 footer-txt">
+        <p>Avestia Publishing, International ASET Inc. </p>
+        <p>Unit No. 417, 1376 Bank St. </p>
+        <p>Ottawa, Ontario, Canada </p>
+        <p>Postal Code: K1H 7Y3</p>
+        <p>Phone Number: 1-613-695-3040</p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

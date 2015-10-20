@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /jbeb
+exclude: ['README.md',]
